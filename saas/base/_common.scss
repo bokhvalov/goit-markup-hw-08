@@ -1,0 +1,40 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--grey {
+  background-color: getColor('background-secondary');
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.features-list__item:not(:last-child),
+.work-section__list-item:not(:last-child),
+.member-list__item:not(:last-child),
+.cards__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-section__link:hover,
+.footer-section__link:focus,
+.contact-block__link:hover,
+.contact-block__link:focus,
+.contact-block__link:hover,
+.contact-block__link:focus,
+.navigation__link:hover,
+.navigation__link:focus {
+  color: getColor('accent');
+}
+
+.features-list,
+.member-list,
+.work-section__list {
+  display: flex;
+}

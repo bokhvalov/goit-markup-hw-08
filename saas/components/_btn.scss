@@ -1,0 +1,33 @@
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+  padding: 10px 32px;
+
+  border-radius: 4px;
+  border: 0;
+
+  background-color: getColor('accent');
+
+  font-family: inherit;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('btn-hover');
+  }
+}
+
+.btn__icon {
+  fill: #fff;
+  margin-left: 10px;
+}

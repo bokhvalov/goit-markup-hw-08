@@ -1,0 +1,13 @@
+@mixin link-common($display){
+    display: $display;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+}
+  

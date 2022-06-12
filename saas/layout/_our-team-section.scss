@@ -1,0 +1,37 @@
+.member-list__area {
+  padding: 30px 0;
+
+  width: 270px;
+  border: 1px solid #eeeeee;
+  border-radius: 0px 0px 4px 4px;
+  border-top: 0;
+  text-align: center;
+  background-color: #fff;
+  line-height: 1.19;
+}
+
+.member-list__name {
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.19;
+}
+
+.member-list__position {
+  display: inline-flex;
+  color: getColor("text-secondary");
+  align-items: center;
+
+  margin-bottom: 16px;
+
+  line-height: 1.19;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.member-list__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,20 @@
+.logo {
+  font-family: getFont('logo');
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: getColor('accent');
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.logo__header-headline {
+  color: getColor('text-main');
+
+  margin-right: 92px;
+}
+
+.logo__footer-headline {
+  color: #fff;
+}
+
