@@ -1,5 +1,4 @@
 .btn {
-  display: inline-flex;
 
   align-items: center;
   padding: 10px 32px;
@@ -13,8 +12,9 @@
   cursor: pointer;
   color: #fff;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+
+  @include font-size (16px,30px);
+
   letter-spacing: 0.06em;
 
   transition-property: background-color;

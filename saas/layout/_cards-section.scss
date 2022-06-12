@@ -1,12 +1,12 @@
 .cards-section__filter {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
 }
 
 .cards-section__filter-item:not(:last-child) {
-  margin-right: 8px;
+  // margin-right: 8px;
 }
 
 .cards-section__btn {
@@ -21,8 +21,7 @@
 
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
+  @include font-size (16px, 26px);
 
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;

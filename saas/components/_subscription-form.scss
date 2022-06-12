@@ -1,9 +1,9 @@
 .subscription-form__input {
-    margin-right: 12px;
-    padding: 15px 16px;
+    // margin-right: 12px;
+    // padding: 15px 16px;
   
-    width: 358px;
-    height: 50px;
+    // width: 358px;
+    // height: 50px;
   
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -12,8 +12,7 @@
   
     color: #fff;
   
-    font-size: 16px;
-    line-height: 1.25;
+    @include font-size (16px, 20px);
     letter-spacing: 0.03em;
   
     transition: border-color 250ms $timing-function;

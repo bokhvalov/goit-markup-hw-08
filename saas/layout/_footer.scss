@@ -3,26 +3,26 @@
 }
 
 .footer-section__logo {
-  display: flex;
-  margin: 0;
-  margin-bottom: 20px;
+  // display: flex;
+  // margin: 0;
+  // margin-bottom: 20px;
 }
 
 .footer-section {
   background-color: getColor("background-accent");
   line-height: 1.7;
   color: #fff;
-  font-size: 14px;
+  @include font-size (14px,24px);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer-section__contact {
-  margin-right: 70px;
+  // margin-right: 70px;
 }
 
 .footer-section__form {
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 
@@ -35,23 +35,22 @@
   font-weight: 400;
   font-style: normal;
   line-height: 1.7;
-  font-size: 14px;
+  @include font-size (14px,24px);
 
   &:not(:last-child) {
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
   }
 }
 
 .footer-section__address {
-  margin-bottom: 9px;
+  // margin-bottom: 9px;
 }
 
 .subscription-form__subtitle,
 .footer-socials__subtitle {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 
   color: #fff;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font-size (14px,16.41px);
 }

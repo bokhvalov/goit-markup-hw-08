@@ -3,11 +3,14 @@
     text-decoration: none;
     color: inherit;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.17;
+    @include font-size (14px,16.41px);
   
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $timing-function;
 }
   
+@mixin font-size ($size,$height) {
+    font-size: $size;
+    line-height: $height/$size;
+}

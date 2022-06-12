@@ -1,14 +1,14 @@
 .social-list {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 }
 .social-list__link {
   display: flex;
   border-radius: 50%;
   height: 44px;
   width: 44px;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
 
   transition-property: background-color;
   transition-duration: 250ms;
@@ -21,7 +21,7 @@
 }
 
 .social-list__item:not(:last-child) {
-  margin-right: 10px;
+  // margin-right: 10px;
 }
 
 .social-list__icon {

@@ -1,11 +1,11 @@
 .clients-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 }
 
 .clients-list__item {
-  display: flex;
+  // display: flex;
 
   &:not(:last-child) {
     margin-right: 30px;
@@ -13,9 +13,9 @@
 }
 
 .clients-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   width: 170px;
   height: 92px;
 
