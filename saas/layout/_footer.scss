@@ -1,56 +1,92 @@
+.footer-section__block {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
+.footer-section__block-item {
+  @media (max-width:1199px) {
+    margin-bottom: 60px;
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width:1199px){
+    width: 332px;
+    &:nth-child(1) {
+      margin-right: 165px;
+    }
+  }
+}
+
 .footer-section__link {
   @include link-common(flex);
+  @include font-size(14px, 24px);
+
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  @media (max-width: 1199px) {
+    justify-content: center;
+  }
 }
 
 .footer-section__logo {
-  // display: flex;
-  // margin: 0;
-  // margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-section {
   background-color: getColor("background-accent");
-  line-height: 1.7;
   color: #fff;
-  @include font-size (14px,24px);
+  @include font-size(14px, 24px);
   padding-top: 60px;
   padding-bottom: 60px;
+  @media (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-section__contact {
-  // margin-right: 70px;
+  @media (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-section__form {
-  // margin-left: auto;
+  @media (max-width:1199px) {
+    display: inline-block;
+    width: 450px; 
+  }
+
+  @media (min-width: 1200px) {
+    display: inline;
+    margin-left: auto;
+  }
 }
 
-
-.footer-section__address {
-  font-style: normal;
-}
-
-.footer-section__link {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.7;
-  @include font-size (14px,24px);
-
-  &:not(:last-child) {
-    // margin-bottom: 9px;
+.footer-socials {
+  @media (min-width: 768px) {
+    width: 206px;
   }
 }
 
 .footer-section__address {
-  // margin-bottom: 9px;
+  font-style: normal;
+  margin-bottom: 9px;
 }
 
 .subscription-form__subtitle,
 .footer-socials__subtitle {
-  // margin-bottom: 20px;
+  margin-bottom: 20px;
 
   color: #fff;
   text-transform: uppercase;
-  @include font-size (14px,16.41px);
+  @include font-size(14px, 16.41px);
 }

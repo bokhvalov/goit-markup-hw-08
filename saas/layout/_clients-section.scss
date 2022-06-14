@@ -1,23 +1,51 @@
 .clients-list {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-.clients-list__item {
-  // display: flex;
+  margin-bottom: -30px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media (max-width:479px){
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
 
+.clients-list__item {
+  display: flex;
+margin-bottom: 30px;
+margin-right: 30px;
+
+@media (max-width:479px){
+  margin-right: 0;
+}
+
+@media (max-width:767px) {
+  &:nth-child(2n){
+    margin-right: 0;
+  }
+}
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width:1200px) {
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+}
+
 .clients-list__link {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 92px;
+  width: 210px;
 
   border: 1px getColor('icon') solid;
   border-radius: 4px;
@@ -30,7 +58,17 @@
   &:hover {
     border-color: getColor('accent');
   }
+
+  @media (min-width:768px) {
+    width: 226px;
+  }
+
+    @media (min-width:1200px) {
+    width: 170px;
+  }
 }
+
+
 .clients-list__icon {
   fill: getColor('icon');
 

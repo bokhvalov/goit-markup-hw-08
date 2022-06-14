@@ -22,14 +22,18 @@
   </head>
   <body>
     <header class="header">
-      <div class="container container--flex"> 
+      <div class="container container--flex">
         <a href="./index.html" class="logo header__logo" lang="en"
           >Web<span class="logo__header-headline">Studio</span></a
         >
         <nav>
           <ul class="navigation">
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--active" href="./index.html">Студия</a>
+              <a
+                class="navigation__link navigation__link--active"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="./portfolio.html">Портфолио</a>
@@ -40,7 +44,11 @@
           </ul>
         </nav>
         <div class="header__contact contact-block">
-          <a class="contact-block__link" href="mailto:info@devstudio.com" lang="en">
+          <a
+            class="contact-block__link"
+            href="mailto:info@devstudio.com"
+            lang="en"
+          >
             <svg class="contact-block__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
@@ -62,7 +70,6 @@
           </svg>
         </button>
       </div>
-      
     </header>
 
     <main>
@@ -75,7 +82,7 @@
         </div>
       </section>
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="features-list">
@@ -137,30 +144,36 @@
           <ul class="work-section__list">
             <li class="work-section__list-item">
               <img
-                src="./images/img-1.jpg"
+                srcset="./images/index/desktop/work-1@1x.jpg 1x, ./images/index/desktop/work-1@2x.jpg 2x"
+                src="./images/index/desktop/work-1@1x.jpg"
                 alt="Программирование - программист работает в офисе"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="image-title">Десктопные приложения</p>
             </li>
 
             <li class="work-section__list-item">
               <img
-                src="./images/img-2.jpg"
+              srcset="./images/index/desktop/work-2@1x.jpg 1x, ./images/index/desktop/work-2@2x.jpg 2x"
+              src="./images/index/desktop/work-2@1x.jpg"
                 alt="Мобильная разрабтка - вэб-дизайнер прорабатывает дизайн мобильного приложения"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="image-title">Мобильные приложения</p>
             </li>
 
             <li class="work-section__list-item">
               <img
-                src="./images/img-3.jpg"
+              srcset="./images/index/desktop/work-3@1x.jpg 1x, ./images/index/desktop/work-3@2x.jpg 2x"
+              src="./images/index/desktop/work-3@1x.jpg"
                 alt="Дизайн - вэб дизайнер работает с палитрой цветов"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="image-title">Дизайнерские решения</p>
             </li>
@@ -174,10 +187,18 @@
           <ul class="member-list">
             <li class="member-list__item">
               <img
-                src="./images/img-4.jpg"
+                srcset="
+                  ./images/index/mob/member-1_mob@x1.jpg         450w,
+                  ./images/index/mob/member-1_mob@x2.jpg         900w,
+                  ./images/index/tablet/member-1_tablet@x1.jpg   354w,
+                  ./images/index/tablet/member-1_tablet@x2.jpg   608w,
+                  ./images/index/desktop/member-1_desktop@x1.jpg 270w,
+                  ./images/index/desktop/member-1_desktop@x2.jpg 640w
+                "
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/index/mob/member-1_mob@x1.jpg"
                 alt="Фото Игорь Демьяненко"
-                width="270"
-                height="260"
+                loading="lazy"
               />
               <div class="member-list__area">
                 <h3 class="member-list__name">Игорь Демьяненко</h3>
@@ -243,15 +264,25 @@
 
             <li class="member-list__item">
               <img
-                src="./images/img-5.jpg"
+                srcset="
+                  ./images/index/mob/member-2_mob@x1.jpg         450w,
+                  ./images/index/mob/member-2_mob@x2.jpg         900w,
+                  ./images/index/tablet/member-2_tablet@x1.jpg   354w,
+                  ./images/index/tablet/member-2_tablet@x2.jpg   608w,
+                  ./images/index/desktop/member-2_desktop@x1.jpg 270w,
+                  ./images/index/desktop/member-2_desktop@x2.jpg 640w
+                "
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/index/mob/member-1_mob@x1.jpg"
                 alt="Фото Ольга Репина"
-                width="270"
-                height="260"
+                loading="lazy"
               />
               <div class="member-list__area">
                 <h3 class="member-list__name">Ольга Репина</h3>
 
-                <p class="member-list__position" lang="en">Frontend Developer</p>
+                <p class="member-list__position" lang="en">
+                  Frontend Developer
+                </p>
                 <ul class="social-list">
                   <li class="social-list__item">
                     <a
@@ -311,10 +342,18 @@
 
             <li class="member-list__item">
               <img
-                src="./images/img-6.jpg"
+                srcset="
+                  ./images/index/mob/member-3_mob@x1.jpg         450w,
+                  ./images/index/mob/member-3_mob@x2.jpg         900w,
+                  ./images/index/tablet/member-3_tablet@x1.jpg   354w,
+                  ./images/index/tablet/member-3_tablet@x2.jpg   608w,
+                  ./images/index/desktop/member-3_desktop@x1.jpg 270w,
+                  ./images/index/desktop/member-3_desktop@x2.jpg 640w
+                "
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/index/mob/member-1_mob@x1.jpg"
                 alt="Фото Николай Тарасов"
-                width="270"
-                height="260"
+                loading="lazy"
               />
               <div class="member-list__area">
                 <h3 class="member-list__name">Николай Тарасов</h3>
@@ -379,10 +418,18 @@
 
             <li class="member-list__item">
               <img
-                src="./images/img-7.jpg"
+                srcset="
+                  ./images/index/mob/member-4_mob@x1.jpg         450w,
+                  ./images/index/mob/member-4_mob@x2.jpg         900w,
+                  ./images/index/tablet/member-4_tablet@x1.jpg   354w,
+                  ./images/index/tablet/member-4_tablet@x2.jpg   608w,
+                  ./images/index/desktop/member-4_desktop@x1.jpg 270w,
+                  ./images/index/desktop/member-4_desktop@x2.jpg 640w
+                "
+                sizes="(min-width:1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/index/mob/member-1_mob@x1.jpg"
                 alt="Фото Михаил Ермаков"
-                width="270"
-                height="260"
+                loading="lazy"
               />
               <div class="member-list__area">
                 <h3 class="member-list__name">Михаил Ермаков</h3>
@@ -447,8 +494,9 @@
           </ul>
         </div>
       </section>
-
+ 
       <section class="section">
+        <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
         <ul class="clients-list">
           <li class="clients-list__item">
@@ -530,12 +578,13 @@
             </a>
           </li>
         </ul>
-      </section> -->
+      </div>
+      </section>
     </main>
-<!-- 
+
     <footer class="footer-section">
-      <div class="container container--footer">
-        <div>
+      <div class="container container--footer footer-section__block">
+        <div class="footer-section__block-item">
           <a href="./index.html" class="logo footer-section__logo" lang="en"
             >Web<span class="logo__footer-headline">Studio</span></a
           >
@@ -547,7 +596,7 @@
             <a class="footer-section__link" href="tel:+380961111111"> +38 096 111 11 11 </a>
           </address>
         </div>
-        <div class="footer-socials">
+        <div class="footer-section__block-item footer-socials">
           <h3 class="footer-socials__subtitle">Присоединяйтесь</h3>
           <ul class="social-list">
             <li class="social-list__item">
@@ -626,7 +675,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer> 
 
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop__modal">
@@ -642,7 +691,15 @@
         <form class="modal-form">
           <label class="modal-form__label">
             <span class="modal-form__label-name">Имя</span>
-            <input class="modal-form__input" type="text" name="name" minlength="2" placeholder=" " required title="Введите Ваше имя"/>
+            <input
+              class="modal-form__input"
+              type="text"
+              name="name"
+              minlength="2"
+              placeholder=" "
+              required
+              title="Введите Ваше имя"
+            />
             <svg class="modal-form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
@@ -653,7 +710,8 @@
             <svg class="modal-form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
-            <input class="modal-form__input"
+            <input
+              class="modal-form__input"
               type="tel"
               name="tel"
               minlength="13"
@@ -671,22 +729,42 @@
             <svg class="modal-form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
-            <input class="modal-form__input" type="email" name="email" minlength="2" placeholder=" " required title="Введите ваш элетронный адрес"/>
+            <input
+              class="modal-form__input"
+              type="email"
+              name="email"
+              minlength="2"
+              placeholder=" "
+              required
+              title="Введите ваш элетронный адрес"
+            />
           </label>
 
           <label class="modal-form__label">
             <span class="modal-form__label-name">Комментарий</span>
-            <textarea class="modal-form__comment" name="comment" placeholder="Введите текст"></textarea>
+            <textarea
+              class="modal-form__comment"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
 
           <label class="agreement">
-            <input class="agreement__input visually-hidden" type="checkbox" name="license" required />
+            <input
+              class="agreement__input visually-hidden"
+              type="checkbox"
+              name="license"
+              required
+            />
             <span class="checkbox">
               <svg class="checkbox__icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-check-box"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю&nbsp;<a class="agreement__link" href="/">
+            Соглашаюсь с рассылкой и принимаю&nbsp;<a
+              class="agreement__link"
+              href="/"
+            >
               Условия договора</a
             >
           </label>

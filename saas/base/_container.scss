@@ -30,3 +30,15 @@
 //         display: block;
 //     }
 //   }
+
+.container--footer {
+  @media (min-width:768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (min-width:1200px) {
+    flex-wrap: nowrap;
+  }
+}

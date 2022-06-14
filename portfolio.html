@@ -29,7 +29,11 @@
         <nav>
           <ul class="navigation">
             <li class="navigation__item">
-              <a class="navigation__link" href="./index.html">Студия</a>
+              <a
+                class="navigation__link"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="navigation__item">
               <a class="navigation__link navigation__link--active" href="./portfolio.html">Портфолио</a>
@@ -40,7 +44,11 @@
           </ul>
         </nav>
         <div class="header__contact contact-block">
-          <a class="contact-block__link" href="mailto:info@devstudio.com" lang="en">
+          <a
+            class="contact-block__link"
+            href="mailto:info@devstudio.com"
+            lang="en"
+          >
             <svg class="contact-block__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
@@ -53,6 +61,14 @@
             +38 096 111 11 11
           </a>
         </div>
+        <button class="header__modal-icon" type="button" data-modal-close>
+          <svg class="header__icon-open" width="24" height="16">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+          <svg class="header__icon-close" width="18.67" height="18.67">
+            <use href="./images/icons.svg#icon-mobile-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -283,8 +299,8 @@
       </section>
     </main>
     <footer class="footer-section">
-      <div class="container container--footer">
-        <div class="footer-section__contacts">
+      <div class="container container--footer footer-section__block">
+        <div class="footer-section__block-item">
           <a href="./index.html" class="logo footer-section__logo" lang="en"
             >Web<span class="logo__footer-headline">Studio</span></a
           >
@@ -296,7 +312,7 @@
             <a class="footer-section__link" href="tel:+380961111111"> +38 096 111 11 11 </a>
           </address>
         </div>
-        <div class="footer-socials">
+        <div class="footer-section__block-item footer-socials">
           <h3 class="footer-socials__subtitle">Присоединяйтесь</h3>
           <ul class="social-list">
             <li class="social-list__item">
@@ -375,6 +391,6 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> 
   </body>
 </html>
