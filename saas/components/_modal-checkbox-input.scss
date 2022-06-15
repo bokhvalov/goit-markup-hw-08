@@ -6,6 +6,10 @@
   cursor: pointer;
   color: getColor('text-secondary');
   line-height: 1.7;
+
+  @media (max-width:1199px) {
+    @include font-size(12px, 14.06px);
+  }
 }
 
 .agreement__link {
@@ -27,7 +31,7 @@
 
   border: 2px solid getColor('text-main');
   border-radius: 2px;
-  margin-right: 9px;
+  margin-right: 8px;
 
   transition: border 550ms $timing-function,
     background-color 250ms $timing-function;

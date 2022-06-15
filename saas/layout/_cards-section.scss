@@ -1,12 +1,27 @@
 .cards-section__filter {
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 
-  // padding-bottom: 50px;
+
+  margin-bottom: 25px;
+
+  @media (min-width:767px) {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+
+  @media (min-width:1200px) {
+    margin-bottom: 35px;
+  }
+
+}
+
+.cards-section__filter-item{
+  margin-bottom: 15px;
 }
 
 .cards-section__filter-item:not(:last-child) {
-  // margin-right: 8px;
+  margin-right: 8px;
 }
 
 .cards-section__btn {

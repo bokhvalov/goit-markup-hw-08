@@ -39,10 +39,22 @@
 
 .header__icon-open {
   position: absolute;
+
+  .header__modal-icon.is-open &{
+opacity: 0;
+transition: opacity 250ms $timing-function,
+  }
 }
 
 .header__icon-close {
+  opacity: 0;
   position: absolute;
+  z-index: 2;
+
+  .header__modal-icon.is-open &{
+    opacity: 1;
+        transition: opacity 250ms $timing-function,
+  }
 }
 
 .contact-block__link,
