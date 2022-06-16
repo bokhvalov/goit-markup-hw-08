@@ -2,6 +2,10 @@
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width:1199px) {
+      margin-bottom: -30px;
+    }
   }
 }
 
